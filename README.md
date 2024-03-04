@@ -1,5 +1,5 @@
 <div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
-  <a target="_blank" rel="noopener noreferrer" href="/CEA-LIST/N2D2/blob/master/docs/_static/N2D2_Logo.png"><img src="/CEA-LIST/N2D2/raw/master/docs/_static/N2D2_Logo.png" alt="N2D2" height="200" style="max-width: 100%;"></a>
+  <a target="_blank" rel="noopener noreferrer" href="https://github.com/CEA-LIST/N2D2/blob/master/docs/_static/N2D2_Logo.png"><img src="https://github.com/CEA-LIST/N2D2/raw/master/docs/_static/N2D2_Logo.png" alt="N2D2" height="200" style="max-width: 100%;"></a>
 </div>
 <hr>
 <p dir="auto"><a href="/CEA-LIST/N2D2/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/55baa8fa20dfa3f7d20174357cf4f5b8903bca85e53e7b1500963b5c82f85442/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d436543494c4c2d2d432d626c75652e737667" alt="执照" data-canonical-src="https://img.shields.io/badge/license-CeCILL--C-blue.svg" style="max-width: 100%;"></a></p>
