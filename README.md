@@ -1,101 +1,108 @@
-<div align="center">
-  <img src="docs/_static/N2D2_Logo.png" alt="N2D2" height="200">
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div align="center" dir="auto">
+  <a target="_blank" rel="noopener noreferrer" href="/CEA-LIST/N2D2/blob/master/docs/_static/N2D2_Logo.png"><img src="/CEA-LIST/N2D2/raw/master/docs/_static/N2D2_Logo.png" alt="N2D2" height="200" style="max-width: 100%;"></a>
 </div>
-
-----------------------------------------------------------------
-
-[![License](https://img.shields.io/badge/license-CeCILL--C-blue.svg)](LICENSE)
-
-N2D2 (for *Neural Network Design & Deployment*) is [CEA LIST](http://www-list.cea.fr/)'s CAD framework for designing and simulating
-Deep Neural Network (DNN), and building full DNN-based applications on embedded platforms.
-N2D2 is developped along with industrial and academic partners and is open source.
-
-
-| **Docs** | **`Linux CPU`**<br/><sub>&ge; GCC 4.4.7</sub> | **`Linux GPU`**<br/><sub>CUDA 11.3 + CuDNN 8</sub> | **`Windows CPU`**<br/><sub>&ge; Visual Studio 2015.2</sub> | **`Windows GPU`**<br/><sub>&ge; CUDA 8.0 + CuDNN 5.1</sub> |
-| ---------- | --------------- | ------------------ | ------------------ | ------------------ |
-| [![Documentation Status](https://readthedocs.org/projects/n2d2/badge/?version=latest)](https://cea-list.github.io/N2D2-docs/) | [![linux-cpu](https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-cpu.yml/badge.svg)](https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-cpu.yml) | [![linux-gpu](https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-gpu.yml/badge.svg)](https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-gpu.yml) | | |
-
-
-## Usage
-
-You can discover how to use the framework by visiting our [online documentation](https://cea-list.github.io/N2D2-docs/).
-
-- [General presentation of the framework](https://cea-list.github.io/N2D2-docs/intro/intro.html)
-- [How to compile N2D2 and perform simulations](https://cea-list.github.io/N2D2-docs/intro/simus.html)
-- How to write neural network models
-  - [With the INI interface](https://cea-list.github.io/N2D2-docs/ini/intro.html)
-  - [With the Python API](https://cea-list.github.io/N2D2-docs/python_api/intro.html)
-- How to quantize neural network models
-  - [With Post-Training Quantization](https://cea-list.github.io/N2D2-docs/quant/post.html)
-  - [With Quantization-Aware Training](https://cea-list.github.io/N2D2-docs/quant/qat.html)
-- [How to export neural network models](https://cea-list.github.io/N2D2-docs/export/CPP.html)
-- Tutorials
-
-The N2D2 executables and **application examples** are located in the [exec/](exec) directory.
-
-You can find examples of the N2D2 Python API [here](https://cea-list.github.io/N2D2-docs/python_api/example.html).
-
-## Installation
-
-### Get the N2D2 Source
-
-```
-git clone --recursive git@github.com:CEA-LIST/N2D2.git
-```
-
-Specify the *recursive* option is required as it will download the PyBind submodule.
-
-### Install Dependencies
-
-The only mandatory dependencies for N2D2 are OpenCV and Gnuplot.
-
-Moreover, the NVIDIA CUDA and CuDNN libraries are required to enable GPU-acceleration.
-We highly recommend to use a **CUDA version higher than 10** with a **CuDNN version higher than 7**.
-
-If you want to disable CUDA support, export the environment variable `N2D2_NO_CUDA=1`.
-
-### Build on Linux
-
-To compile N2D2 on Linux, please go to the root of the project and run the following:
-
-```
-mkdir build
+<hr>
+<p dir="auto"><a href="/CEA-LIST/N2D2/blob/master/LICENSE"><img src="https://camo.githubusercontent.com/55baa8fa20dfa3f7d20174357cf4f5b8903bca85e53e7b1500963b5c82f85442/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d436543494c4c2d2d432d626c75652e737667" alt="执照" data-canonical-src="https://img.shields.io/badge/license-CeCILL--C-blue.svg" style="max-width: 100%;"></a></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N2D2（</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">神经网络设计和部署</font></font></em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）是</font></font><a href="http://www-list.cea.fr/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CEA LIST</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的 CAD 框架，用于设计和模拟深度神经网络 (DNN)，并在嵌入式平台上构建完整的基于 DNN 的应用程序。</font><font style="vertical-align: inherit;">N2D2 是与工业和学术合作伙伴一起开发的，并且是开源的。</font></font></p>
+<table>
+<thead>
+<tr>
+<th><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></strong></th>
+<th><strong><code>Linux CPU</code></strong><br><sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">≥ 海湾合作委员会 4.4.7</font></font></sub></th>
+<th><strong><code>Linux GPU</code></strong><br><sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CUDA 11.3 + CuDNN 8</font></font></sub></th>
+<th><strong><code>Windows CPU</code></strong><br><sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">≥ 视觉工作室 2015.2</font></font></sub></th>
+<th><strong><code>Windows GPU</code></strong><br><sub><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">≥ CUDA 8.0 + CuDNN 5.1</font></font></sub></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://cea-list.github.io/N2D2-docs/" rel="nofollow"><img src="https://camo.githubusercontent.com/a9df27ea4582183a52512289ae147d6ce802abc48d55e1b78c4ae65dfaf076b2/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f6e3264322f62616467652f3f76657273696f6e3d6c6174657374" alt="文件状态" data-canonical-src="https://readthedocs.org/projects/n2d2/badge/?version=latest" style="max-width: 100%;"></a></td>
+<td><a href="https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-cpu.yml"><img src="https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-cpu.yml/badge.svg" alt="linux-cpu" style="max-width: 100%;"></a></td>
+<td><a href="https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-gpu.yml"><img src="https://github.com/CEA-LIST/N2D2/actions/workflows/build_linux-gpu.yml/badge.svg" alt="Linux GPU" style="max-width: 100%;"></a></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用法</font></font></h2><a id="user-content-usage" class="anchor-element" aria-label="永久链接：用法" href="#usage"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://cea-list.github.io/N2D2-docs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以通过访问我们的在线文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">来了解如何使用该框架</font><font style="vertical-align: inherit;">。</font></font></p>
+<ul dir="auto">
+<li><a href="https://cea-list.github.io/N2D2-docs/intro/intro.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">框架的总体介绍</font></font></a></li>
+<li><a href="https://cea-list.github.io/N2D2-docs/intro/simus.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何编译 N2D2 并执行模拟</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何编写神经网络模型
+</font></font><ul dir="auto">
+<li><a href="https://cea-list.github.io/N2D2-docs/ini/intro.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">具有INI接口</font></font></a></li>
+<li><a href="https://cea-list.github.io/N2D2-docs/python_api/intro.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用Python API</font></font></a></li>
+</ul>
+</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何量化神经网络模型
+</font></font><ul dir="auto">
+<li><a href="https://cea-list.github.io/N2D2-docs/quant/post.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过训练后量化</font></font></a></li>
+<li><a href="https://cea-list.github.io/N2D2-docs/quant/qat.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过量化感知训练</font></font></a></li>
+</ul>
+</li>
+<li><a href="https://cea-list.github.io/N2D2-docs/export/CPP.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何导出神经网络模型</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></li>
+</ul>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N2D2 可执行文件和</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">应用程序示例</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">位于</font></font><a href="/CEA-LIST/N2D2/blob/master/exec"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">exec/</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">目录中。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://cea-list.github.io/N2D2-docs/python_api/example.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以在此处</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">找到 N2D2 Python API 的示例</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor-element" aria-label="永久链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取 N2D2 源代码</font></font></h3><a id="user-content-get-the-n2d2-source" class="anchor-element" aria-label="永久链接：获取 N2D2 源代码" href="#get-the-n2d2-source"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>git clone --recursive git@github.com:CEA-LIST/N2D2.git
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="git clone --recursive git@github.com:CEA-LIST/N2D2.git" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">指定</font><font style="vertical-align: inherit;">需要</font></font><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">递归选项，因为它将下载 PyBind 子模块。</font></font></em><font style="vertical-align: inherit;"></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装依赖项</font></font></h3><a id="user-content-install-dependencies" class="anchor-element" aria-label="永久链接：安装依赖项" href="#install-dependencies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N2D2 唯一的强制依赖项是 OpenCV 和 Gnuplot。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">此外，需要 NVIDIA CUDA 和 CuDNN 库才能启用 GPU 加速。</font><font style="vertical-align: inherit;">我们强烈建议使用</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高于 10 的 CUDA 版本</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">高于 7 的 CuDNN 版本</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果要禁用 CUDA 支持，请导出环境变量</font></font><code>N2D2_NO_CUDA=1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Linux 上构建</font></font></h3><a id="user-content-build-on-linux" class="anchor-element" aria-label="永久链接：在 Linux 上构建" href="#build-on-linux"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要在 Linux 上编译 N2D2，请转到项目的根目录并运行以下命令：</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>mkdir build
 cd build
-cmake .. && make
-```
-
-You should have the `n2d2` executable in `build/bin` after the compilation.
-
-To install the Python API in your python environment, follow the tutorial on our [doc](https://cea-list.github.io/N2D2-docs/python_api/intro.html).
-
-
-## Docker Image
-
-You can also pull a **pre-built docker image** from Docker Hub and run it with docker
-```
-docker pull cealist/n2d2
+cmake .. &amp;&amp; make
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="mkdir build
+cd build
+cmake .. &amp;&amp; make" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编译后</font><font style="vertical-align: inherit;">您应该会获得</font></font><code>n2d2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">可执行文件。</font></font><code>build/bin</code><font style="vertical-align: inherit;"></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://cea-list.github.io/N2D2-docs/python_api/intro.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要在您的 python 环境中安装 Python API，请按照我们文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中的教程进行操作</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Docker 镜像</font></font></h2><a id="user-content-docker-image" class="anchor-element" aria-label="永久链接：Docker 镜像" href="#docker-image"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您还可以从 Docker Hub 中提取</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">预构建的 docker 映像</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">并使用 docker 运行它</font></font></p>
+<div class="snippet-clipboard-content notranslate position-relative overflow-auto"><pre class="notranslate"><code>docker pull cealist/n2d2
 docker run --gpus all cealist/n2d2:latest
-```
-
-Another possibility is to build N2D2 from the `Dockerfile`. 
-It is supplied to build images with CUDA 10.2 support and CuDNN 8.
-
-
-## Contributing
-
-If you would like to contribute to the N2D2 project, we’re happy to have your help! 
-Everyone is welcome to contribute code via pull requests, to file issues on GitHub, 
-to help people asking for help, fix bugs that people have filed, 
-to add to our documentation, or to help out in any other way.
-
-We grant commit access (which includes full rights to the issue database, such as being able to edit labels) 
-to people who have gained our trust and demonstrated a commitment to N2D2. <br>
-For more details see our [contribution guidelines](CONTRIBUTING.md).
-
-
-## License
-
-N2D2 is released under the [CeCILL-C](LICENSE) license, 
-a free software license adapted to both international and French legal matters 
-that is fully compatible with the FSF's GNU/LGPL license.
-
+</code></pre><div class="zeroclipboard-container">
+    <clipboard-copy aria-label="Copy" class="ClipboardButton btn btn-invisible js-clipboard-copy m-2 p-0 tooltipped-no-delay d-flex flex-justify-center flex-items-center" data-copy-feedback="Copied!" data-tooltip-direction="w" value="docker pull cealist/n2d2
+docker run --gpus all cealist/n2d2:latest" tabindex="0" role="button">
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-copy js-clipboard-copy-icon">
+    <path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+</svg>
+      <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-check js-clipboard-check-icon color-fg-success d-none">
+    <path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path>
+</svg>
+    </clipboard-copy>
+  </div></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">另一种可能性是从</font></font><code>Dockerfile</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">它用于构建支持 CUDA 10.2 和 CuDNN 8 的图像。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h2><a id="user-content-contributing" class="anchor-element" aria-label="永久链接：贡献" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您想为 N2D2 项目做出贡献，我们很高兴得到您的帮助！</font><font style="vertical-align: inherit;">欢迎每个人通过拉取请求贡献代码，在 GitHub 上提交问题，帮助人们寻求帮助，修复人们提交的错误，添加到我们的文档中，或以任何其他方式提供帮助。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们向获得我们信任并表现出对 N2D2 承诺的人员授予提交访问权限（包括对问题数据库的完整权限，例如能够编辑标签）。</font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+有关更多详细信息，请参阅我们的</font></font><a href="/CEA-LIST/N2D2/blob/master/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">执照</font></font></h2><a id="user-content-license" class="anchor-element" aria-label="永久链接：许可证" href="#license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="/CEA-LIST/N2D2/blob/master/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N2D2 根据CeCILL-C</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可证发布</font><font style="vertical-align: inherit;">，这是一个适用于国际和法国法律事务的自由软件许可证，与 FSF 的 GNU/LGPL 许可证完全兼容。</font></font></p>
+</article></div>
